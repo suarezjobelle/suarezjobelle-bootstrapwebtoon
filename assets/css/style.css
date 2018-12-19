@@ -1,0 +1,152 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+html,body
+{
+	height: 100%;
+	
+}
+#home{
+	background:  url('../image/body.jpg')center center no-repeat;
+	background-size: cover;
+}
+/* What we do*/
+.section-content{
+	padding: 1rem;
+}
+.samplecontainer {
+  position: relative;
+   padding: 0px;
+  margin-bottom: 6px;
+  opacity: .95;
+  width: 55%;
+  margin-left: 60px;
+  margin-top: 10px;
+
+}
+img.tryimage {
+  display: block;
+  width: 120%;
+  height: 200px;
+  margin-top: 30px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #1c4c3e;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  opacity: .70;
+}
+.twocolumn {
+   float: left;
+  width: 33.33%;
+   
+}
+.contactForm {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  margin-top: 10px;
+}
+.contactsocial {
+  float: left;
+  width: 40%;
+  padding: 0px;
+  margin-top: 10px;
+}
+.samplecontainer:hover .overlay {
+  width: 120%;
+  left: 0;
+  right: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-weight: 900;
+
+}
+
+input[type="text"] {
+  width: 345px;
+  height: 30px;
+}
+
+input[type="submit"] {
+  width: 360px;
+  margin: 10px 0;
+  background: linear-gradient( to right top, rgba(218, 112, 214, 0.8), rgba(34, 139, 34, 0.8));
+  color: black;
+  padding: 10px 0;
+  border: none;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  background: rgba(105, 90, 205, 0.8);
+  color: white;
+}
+.card{
+	padding:1rem;
+}
+/*About*/
+
+.about-text
+{
+	background: rgba(0,0,0,0.8);
+	color: black;
+	padding: 1.875rem
+}
+/*Footer*/
+#footer-main {
+background: #222;
+color:white;
+font-size: 0.8rem;
+padding: 2.5rem 0;
+list-style: none;
+}
+.grids{
+	background: white;
+}
+
+
+@media(max-width: 7	00px){
+
+	#cover-caption h1{
+		font-family: Italic;
+	}
+}
+
+/*.col-lg-3{
+	background-color: #aaa592;
+}
+.col-lg-4{
+	background-color: #91ad9c;
+}
+.col-lg-6{
+	background-color: #c4b0c3;
+}
+.col-lg-12{
+	background-color: #b3b599;
+}
+.col-lg-8	{
+	background-color: #c9ddda;
+}*/
+li , ul{
+	color: white;
+}
