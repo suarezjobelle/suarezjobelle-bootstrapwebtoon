@@ -12,6 +12,7 @@ html,body
 	background:  url('../image/body.jpg')center center no-repeat;
 	background-size: cover;
 }
+
 /* What we do*/
 .section-content{
 	padding: 1rem;
@@ -22,15 +23,14 @@ html,body
   margin-bottom: 6px;
   opacity: .95;
   width: 55%;
-  margin-left: 60px;
-  margin-top: 10px;
-
+ margin-left: 10px;
+ 
 }
 img.tryimage {
   display: block;
-  width: 120%;
+  width: 200px;
   height: 200px;
-  margin-top: 30px;
+
 }
 
 .overlay {
@@ -43,7 +43,7 @@ img.tryimage {
   width: 0;
   height: 100%;
   transition: .5s ease;
-  opacity: .70;
+  opacity: .90;
 }
 .twocolumn {
    float: left;
@@ -63,7 +63,7 @@ img.tryimage {
   margin-top: 10px;
 }
 .samplecontainer:hover .overlay {
-  width: 120%;
+  width: 200px;
   left: 0;
   right: 0;
 }
@@ -82,25 +82,7 @@ img.tryimage {
 
 }
 
-input[type="text"] {
-  width: 345px;
-  height: 30px;
-}
 
-input[type="submit"] {
-  width: 360px;
-  margin: 10px 0;
-  background: linear-gradient( to right top, rgba(218, 112, 214, 0.8), rgba(34, 139, 34, 0.8));
-  color: black;
-  padding: 10px 0;
-  border: none;
-  font-size: 20px;
-}
-
-input[type="submit"]:hover {
-  background: rgba(105, 90, 205, 0.8);
-  color: white;
-}
 .card{
 	padding:1rem;
 }
@@ -110,7 +92,23 @@ input[type="submit"]:hover {
 {
 	background: rgba(0,0,0,0.8);
 	color: black;
-	padding: 1.875rem
+	padding: 1rem;
+	
+}
+.about-text2
+{
+	background: rgba(0,0,0,0.8);
+	color: black;
+	padding: 1.875rem;
+
+
+}
+.about-text3{
+	background: rgba(0,0,0,0.8);
+	color: black;
+	padding: 1.875rem;
+	width: 100%;
+	height: 110%;
 }
 /*Footer*/
 #footer-main {
@@ -125,12 +123,17 @@ list-style: none;
 }
 
 
-@media(max-width: 7	00px){
+@media(max-width: 575.98px){
 
 	#cover-caption h1{
 		font-family: Italic;
 	}
 }
+/*#about{
+	background: url('../image/pahiram.png') center center no-repeat;
+	background-size: cover;
+
+}*/
 
 /*.col-lg-3{
 	background-color: #aaa592;
@@ -149,4 +152,95 @@ list-style: none;
 }*/
 li , ul{
 	color: white;
+}
+
+/*Try*/
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(460px, -100px) rotate(180deg);
+  -ms-transform: translate(460px, -100px) rotate(180deg);
+  transform: translate(460px, -100px) rotate(180deg);
+  -webkit-transition: all 0.2s 0.4s ease-in-out;
+  transition: all 0.2s 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 20px 0 0 0;
+  background-color: transparent;
+  -webkit-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.hovereffect:hover a.info {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }

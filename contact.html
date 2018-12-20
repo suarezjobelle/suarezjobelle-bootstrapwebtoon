@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Patua+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
       body,html{
         font-family: 'Cinzel', serif;
@@ -18,7 +19,10 @@
         font-weight: bold;
         color: white;
       }
-
+.carousel-inner{
+  width:100%;
+  max-height: 450px !important;
+}
 
     </style>
    
@@ -43,7 +47,7 @@
        
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="assets/image/toon.png" alt="Third slide">
+      <img class="d-block w-100" src="assets/image/webtoon.jpg" alt="Third slide">
        
     </div>
   </div>
@@ -66,7 +70,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
@@ -78,7 +82,7 @@
        <li class="nav-item">
         <a class="nav-link" href="about.html">About</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="contact.html">Contact</a>
       </li>
        <li class="nav-item">
@@ -93,32 +97,54 @@
 <section id="home">
   <div class="section-content">
     <div class="container-fluid">
-    <div class="about-text">
       <div class="row">
        <div class="col-lg-12">
-
-                          <div class="contactdescription ">
-                        <!--   <div class="title" style="text-align:center;"><h2>  </h2></div> -->
-
-        <div class="row">
-            <div class="contactForm">
-             
-          <div class=" animated shake">
-            <img src="assets/image/pahiram.png" style="margin-left: 40px;" width="100%" height="100%">
-         <p style="margin-left: 20px">Address: <i style="color: white">Studio Residence 2 , 2128, Nuestra Sra. De Guadalupe, City, Makati, 1212 Metro Manila</i></p>
-        <p style="margin-left: 20px">Contact Number: <i style="color:white">(02) 954 1057</i></p>
-        <p style="margin-left: 20px">Email: <i style="color: white">CORPORATE@Pahiram.ph</i></p>
-</div>
-
-          
-                    </div>
-                </div>
-
-   <!--Endtag-->
-        </div>
+         
+           
+            <div class="col-lg-6 pull-right">
+                <div class="about-text2">
+                   <iframe height="700px" width="100%" class="animated pulse" src="https://maps.google.com/maps?q=%20Studio%20Residence%202%20%2C%202128%2C%20Nuestra%20Sra.%20De%20Guadalupe%2C%20City%2C%20Makati%2C%201212%20Metro%20Manila&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+               
+              </div>
+            </div>
+           
+    <div class="col-lg-6 mt-2 pull-right">
+             <!--    contactform -->  
+<div class="about-text3 ">
+<h3 style="color:white;">Contact Us</h3>
+  <div class="input-group mb-3 ">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
     </div>
-</div>
+    <input type="text" class="form-control" placeholder="Name" aria-label="name" aria-describedby="basic-addon1">
   </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+    </div>
+    <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
+    </div>
+    <input type="text" class="form-control" placeholder="Contact Number" aria-label="contact" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><i class="fa fa-comment"></i></span>
+    </div>
+    <textarea class="form-control" rows="7" cols="50" placeholder="Message . . ."></textarea>
+  </div>
+      <button class="btn btn-primary mt-3 btn-block">Send</button>
+</div>
+       
+         </div>
+               
+<!-- endtag -->
+    
+      </div>
+    </div>
 </div>
 </section>
 
@@ -132,11 +158,10 @@
         &copy; 2018 Pahiram.ph<p>Coded by &nbsp;<a href="">Jobelle Suarez</a></p>
       </div> 
        
-      <div class="col-sm-6">
-        <h6>Pahiram.ph Corp</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-      </div>   
+     <div class="col-sm-6">
+        <h3>Pahiram.ph Corp</h3>
+        <h6>MAGPAHIRAM , HUMIRAM</h6>
+      </div>
     </div>
   </div>
 </footer>
